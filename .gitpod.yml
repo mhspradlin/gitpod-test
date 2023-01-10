@@ -1,9 +1,7 @@
-# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - init: Install Clojure and deps CLI # runs during prebuild
-    command: brew install clojure/tools/clojure
+  - name: Install Clojure and deps CLI
+    init: brew install clojure/tools/clojure
 
-# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
   - port: 3000
     onOpen: open-preview
