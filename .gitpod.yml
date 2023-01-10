@@ -1,6 +1,8 @@
 tasks:
   - name: Install Clojure and deps CLI
-    init: brew install clojure/tools/clojure
+    init: |
+      brew install clojure/tools/clojure # Installs Clojure and CLI
+      clj -P # Downloads libraries and caches classpath
 
 ports:
   - port: 3000
