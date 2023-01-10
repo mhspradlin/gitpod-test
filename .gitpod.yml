@@ -3,6 +3,8 @@ tasks:
     init: |
       brew install clojure/tools/clojure # Installs Clojure and CLI
       clj -P # Downloads libraries and caches classpath
+  - name: Open user.clj
+    init: code src/gitpod_test/user.clj
 
 ports:
   - port: 3000
